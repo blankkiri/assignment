@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<body>
+  <h2 id="b"></h2>
+
+  <script>
+    let a = Number(prompt("Enter your marks (0–100):"));
+
+    let grade;
+
+    if (a >= 90) {
+      grade = "A Grade";
+    } else if (a >= 75) {
+      grade = "B Grade";
+    } else if (a >= 50) {
+      grade = "C Grade";
+    } else {
+      grade = "Fail";
+    }
+
+    // Display the grade
+    document.getElementById("b").innerText = `Your grade is: ${grade}`;
+  </script>
+</body>
+</html>
