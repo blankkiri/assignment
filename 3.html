@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<body>
+    <h2 id="a"></h2>
+
+    <script>
+        let name = prompt("Enter the item name:");
+        let price = prompt("Enter the item price (in rupees):");
+        price = Number(price);
+        let cart = {
+            item: name,
+            price: price
+        };
+        document.getElementById("a").innerText =
+            `You added ${cart.item} worth ${cart.price} rupees to your cart.`;
+    </script>
+</body>
+
+</html>
